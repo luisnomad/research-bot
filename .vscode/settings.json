@@ -1,0 +1,21 @@
+{
+  "foam.edit.linkReferenceDefinitions": "off",
+  "editor.minimap.enabled": false,
+  "editor.wrappingIndent": "indent",
+  "editor.wordWrap": "on",
+  "editor.quickSuggestions": {
+    "other": "on",
+    "comments": "off",
+    "strings": "off"
+  },
+  "[markdown]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "yzhang.markdown-all-in-one"
+  },
+  "files.exclude": {
+    "**/node_modules": true
+  },
+  "files.watcherExclude": {
+    "**/node_modules": true
+  }
+}
