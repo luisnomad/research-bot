@@ -1,0 +1,55 @@
+raindrop:
+  poll_interval: 900  # seconds (15 minutes)
+  batch_size: 10
+  timeout: 30
+
+ollama:
+  base_url: "http://localhost:11434"
+  model: "qwen2.5:14b"
+  embedding_model: "nomic-embed-text"
+  timeout: 120
+  max_retries: 2
+
+content_extraction:
+  min_length: 500
+  max_length: 50000
+  extract_images: false
+  user_agent: "KnowledgeBot/1.0"
+
+processing:
+  workers: 1  # Sequential processing
+  retry_attempts: 3
+  retry_delay: 60  # seconds
+
+clustering:
+  min_cluster_size: 5
+  similarity_threshold: 0.75
+  embedding_dimensions: 768
+  max_clusters: 50
+
+synthesis:
+  schedule: "0 22 * * SUN"  # Sunday 22:00
+  lookback_days: 7
+  min_bookmarks: 5
+
+telegram:
+  enabled: true
+  poll_interval: 1.0
+  commands_enabled: true
+  max_message_length: 4000
+
+git:
+  auto_commit: true
+  author_name: "Knowledge System"
+  author_email: "system@knowledge-base.local"
+  commit_batch_size: 10
+
+search:
+  max_results: 10
+  min_similarity: 0.6
+
+logging:
+  level: "INFO"
+  format: "json"
+  rotation: "1 day"
+  retention: "30 days"

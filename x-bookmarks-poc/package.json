@@ -1,0 +1,13 @@
+{
+    "name": "x-bookmarks-poc",
+    "version": "1.0.0",
+    "type": "module",
+    "description": "PoC for X bookmarks extraction via Chrome DevTools Protocol",
+    "main": "poc.mjs",
+    "scripts": {
+        "start": "node poc.mjs"
+    },
+    "dependencies": {
+        "ws": "^8.16.0"
+    }
+}

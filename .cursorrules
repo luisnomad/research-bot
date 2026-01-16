@@ -1,0 +1,31 @@
+# Project Rules
+
+Always create development tasks in TASKS.md, and keep it updated (mark as complete, refine, etc). You should keep tasks grouped by phases, and it's possible to move tasks to different phases whenever it makes sense.
+
+## Tech Stack
+- Runtime: Node.js
+- Language: TypeScript
+- Package Manager: **pnpm** (Strictly use pnpm, do not use npm or yarn)
+- Framework: grammyjs (Telegram Bot)
+- Testing: Jest (with ts-jest)
+
+## Code Quality & Architecture
+- **Functional Programming**: Prefer functional programming patterns. Avoid classes where possible; use pure functions, closures, and type definitions.
+- **Immutability**: Prefer `const` and avoiding mutations.
+- **Separation of Concerns**: Keep logic separated.
+    - Handlers (input parsing)
+    - Services (business logic)
+    - Repositories/Data (persistence)
+- **Small Files**: Keep files short and focused. If a file grows too large, refactor into smaller modules.
+- **Small Methods**: Break complex logic into smaller, named helper functions.
+
+## Testing Guidelines
+- **E2E Testing**:
+    - Tests must reflect a "User Journey" or "Feature Description".
+    - Use meaningful test descriptions (e.g., "Given a user... When they do... Then...").
+    - Use proper mocks for external services (Telegram API, Database).
+    - Avoid implementation detail testing; test behavior.
+
+## Linting
+- Follow ESLint rules strictly. These rules stem from this .cursorrules file. If new rules are added that can be enforced via linting, then the ESLint rules should be updated.
+- Warnings have been configured for non-functional patterns where possible.

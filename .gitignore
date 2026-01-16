@@ -1,7 +1,60 @@
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# System files
 .DS_Store
+Thumbs.db
+
+# IDE
 .vscode/*
 !.vscode/settings.json
 !.vscode/extensions.json
+.idea/
+*.swp
+*.swo
+
+# Dependencies
+node_modules/
+.pnpm-store/
+
+# Build output
+dist/
+build/
+out/
+*.tsbuildinfo
+
+# Testing
+coverage/
+.nyc_output/
+*.lcov
+
+# System directory (database, logs)
+.system/
+
+# SQLite databases
+*.db
+*.db-journal
+*.db-shm
+*.db-wal
+
+# Foam cache
 .foam/cache/
-*.tmp
+
+# Logs
+logs/
 *.log
+npm-debug.log*
+pnpm-debug.log*
+yarn-debug.log*
+
+# Temporary files
+*.tmp
+*.temp
+.cache/
+
+# Misc
+*.pid
+*.seed
+*.pid.lock
