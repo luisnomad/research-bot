@@ -29,6 +29,7 @@ export interface SeedRecord extends Seed {
     readonly triageDecidedBy?: string;
     readonly triageAt?: string;
     readonly triageTopics?: string[];
+    readonly embedding?: number[];   // Vector embedding
     readonly processedAt?: string;
     readonly markdownPath?: string;
     readonly retryCount: number;
@@ -56,6 +57,7 @@ interface SeedRow {
     triage_decided_by: string | null;
     triage_at: string | null;
     triage_topics: string | null;
+    embedding: Buffer | null;
     processed_at: string | null;
     markdown_path: string | null;
     retry_count: number;
@@ -330,6 +332,26 @@ export const incrementSeedRetry = (
     stmt.run(error, id);
 };
 
+/**
+ * Update vector embedding
+ */
+export const updateSeedEmbedding = (
+    db: Database.Database,
+    id: number,
+    embedding: number[]
+): void => {
+    // Convert number array to Float32Array Buffer for storage
+    const buffer = Buffer.from(new Float32Array(embedding).buffer);
+
+    const stmt = db.prepare(`
+    UPDATE seeds
+    SET embedding = ?
+    WHERE id = ?
+  `);
+
+    stmt.run(buffer, id);
+};
+
 // ============================================================================
 // Count Operations
 // ============================================================================
@@ -437,8 +459,40 @@ const mapRowToSeedRecord = (row: SeedRow): SeedRecord => ({
     triageDecidedBy: row.triage_decided_by ?? undefined,
     triageAt: row.triage_at ?? undefined,
     triageTopics: row.triage_topics ? JSON.parse(row.triage_topics) : undefined,
+    embedding: row.embedding ? Array.from(new Float32Array(row.embedding.buffer, row.embedding.byteOffset, row.embedding.byteLength / 4)) : undefined,
     processedAt: row.processed_at ?? undefined,
     markdownPath: row.markdown_path ?? undefined,
     retryCount: row.retry_count,
     lastError: row.last_error ?? undefined,
 });
+
+/**
+ * Perform semantic search across all seeds with an embedding.
+ */
+export const semanticSearch = (
+    db: Database.Database,
+    queryEmbedding: number[],
+    limit: number = 5
+): readonly (SeedRecord & { similarity: number })[] => {
+    // 1. Get all seeds that have an embedding
+    const stmt = db.prepare('SELECT * FROM seeds WHERE embedding IS NOT NULL');
+    const rows = stmt.all() as SeedRow[];
+
+    // 2. Map to records and calculate similarity
+    const results = rows.map(row => {
+        const record = mapRowToSeedRecord(row);
+
+        // Calculate similarity (in-memory)
+        const dotProduct = queryEmbedding.reduce((sum, a, i) => sum + a * (record.embedding![i] ?? 0), 0);
+        const normA = Math.sqrt(queryEmbedding.reduce((sum, a) => sum + a * a, 0));
+        const normB = Math.sqrt(record.embedding!.reduce((sum, b) => sum + b * b, 0));
+        const similarity = normA === 0 || normB === 0 ? 0 : dotProduct / (normA * normB);
+
+        return { ...record, similarity };
+    });
+
+    // 3. Sort and limit
+    return results
+        .sort((a, b) => b.similarity - a.similarity)
+        .slice(0, limit);
+};

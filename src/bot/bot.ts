@@ -1,9 +1,10 @@
 import { Bot, Context } from 'grammy';
 import { getConfig } from '../config/index.js';
 import { logger } from '../config/logger.js';
-import { getSeedStats } from '../db/seed-operations.js';
+import { getSeedStats, semanticSearch } from '../db/seed-operations.js';
 import { initDatabase, closeDatabase } from '../db/schema.js';
 import { UrlIngestorService } from '../services/url-ingestor.js';
+import { EmbeddingService } from '../llm/embeddings.js';
 
 /**
  * Custom context type for our bot
@@ -45,7 +46,8 @@ export const createBot = () => {
             'I am your knowledge base assistant. Send me URLs to queue them for processing, or use the commands below.\n\n' +
             '*Commands:*\n' +
             '/status - System health and statistics\n' +
-            '/today - Summary of today\'s processing\n',
+            '/today - Summary of today\'s processing\n' +
+            '/search <query> - Semantic search across your knowledge base\n',
             { parse_mode: 'Markdown' }
         );
     });
@@ -103,6 +105,65 @@ export const createBot = () => {
             const errorMsg = error instanceof Error ? error.message : String(error);
             logger.error(`Error fetching today's summary: ${errorMsg}`);
             await ctx.reply('❌ Failed to fetch today\'s summary.');
+        } finally {
+            closeDatabase(db);
+        }
+    });
+
+    bot.command('search', async (ctx) => {
+        const query = ctx.match;
+        if (!query) {
+            await ctx.reply('🔍 Please provide a search query, e.g., `/search AI agents`', { parse_mode: 'Markdown' });
+            return;
+        }
+
+        const waitMsg = await ctx.reply(`🧠 *Searching for:* \`${query}\`...`, { parse_mode: 'Markdown' });
+        const db = initDatabase();
+
+        try {
+            // 1. Generate embedding for query
+            const queryEmbedding = await EmbeddingService.embed(query);
+
+            // 2. Perform semantic search
+            const results = semanticSearch(db, queryEmbedding, 5);
+
+            if (results.length === 0) {
+                await ctx.api.editMessageText(
+                    waitMsg.chat.id,
+                    waitMsg.message_id,
+                    `❌ No results found for \`${query}\`. Have you processed any items yet?`,
+                    { parse_mode: 'Markdown' }
+                );
+                return;
+            }
+
+            // 3. Format results
+            const message =
+                `🔍 *Search results for:* \`${query}\`\n\n` +
+                results.map((r, i) => {
+                    const author = r.author ? `@${r.author.replace(/_/g, '\\_')}` : 'Unknown';
+                    const score = (r.similarity * 100).toFixed(1);
+                    return `${i + 1}. [${r.url}](${r.url})\n   *Match:* ${score}% | *Author:* ${author}`;
+                }).join('\n\n');
+
+            await ctx.api.editMessageText(
+                waitMsg.chat.id,
+                waitMsg.message_id,
+                message,
+                {
+                    parse_mode: 'Markdown',
+                    link_preview_options: { is_disabled: true }
+                }
+            );
+
+        } catch (error) {
+            const errorMsg = error instanceof Error ? error.message : String(error);
+            logger.error(`Search failed: ${errorMsg}`);
+            await ctx.api.editMessageText(
+                waitMsg.chat.id,
+                waitMsg.message_id,
+                `❌ *Search failed:* ${errorMsg}`
+            );
         } finally {
             closeDatabase(db);
         }

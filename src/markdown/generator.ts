@@ -93,7 +93,15 @@ export const generateMarkdown = (input: MarkdownGenerationInput): MarkdownDocume
     body += `${triageNotes}\n`;
 
     if (wikilinks) {
-        body += `\n## Related\n\n${wikilinks}\n`;
+        body += `\n## Topics\n\n${wikilinks}\n`;
+    }
+
+    if (input.relatedSeeds && input.relatedSeeds.length > 0) {
+        body += `\n## Related Notes\n\n`;
+        body += input.relatedSeeds
+            .map(r => `- [[${r.filename}]] (${Math.round(r.similarity * 100)}% match)`)
+            .join('\n');
+        body += '\n';
     }
 
     // Generate filename

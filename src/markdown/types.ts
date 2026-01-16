@@ -80,4 +80,11 @@ export interface MarkdownGenerationInput {
 
     /** When the seed was triaged */
     readonly triagedAt: string;
+
+    /** Related seeds for cross-referencing */
+    readonly relatedSeeds?: readonly {
+        readonly title: string;
+        readonly filename: string;
+        readonly similarity: number;
+    }[];
 }

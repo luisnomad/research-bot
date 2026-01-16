@@ -9,7 +9,7 @@ import { existsSync, mkdirSync } from 'fs';
 /**
  * Database schema version
  */
-export const SCHEMA_VERSION = 2;
+export const SCHEMA_VERSION = 3;
 
 /**
  * Create database schema
@@ -37,6 +37,9 @@ export const createSchema = (db: Database.Database): void => {
       content TEXT NOT NULL,             -- JSON array of content parts (for threads)
       is_thread INTEGER NOT NULL DEFAULT 0,
       has_images INTEGER NOT NULL DEFAULT 0,
+      
+      -- Intelligence
+      embedding BLOB,                   -- Vector embedding (Float32Array)
       
       -- Timestamps
       extracted_at TEXT NOT NULL,        -- ISO 8601: when content was extracted
@@ -66,6 +69,7 @@ export const createSchema = (db: Database.Database): void => {
       CHECK (triage_confidence IS NULL OR (triage_confidence >= 0 AND triage_confidence <= 1))
     );
   `);
+
 
   db.exec(`
     CREATE INDEX IF NOT EXISTS idx_seeds_source
@@ -169,6 +173,9 @@ export const initDatabase = (dbPath?: string): Database.Database => {
   // Create schema
   createSchema(db);
 
+  // Run migrations
+  runMigrations(db);
+
   return db;
 };
 
@@ -198,14 +205,21 @@ export const runMigrations = (db: Database.Database): void => {
   const currentVersion = getSchemaVersion(db);
 
   if (currentVersion < SCHEMA_VERSION) {
-    // Future migrations will go here
-    // Example:
-    // if (currentVersion < 2) {
-    //   db.exec('ALTER TABLE bookmarks ADD COLUMN new_field TEXT');
-    //   db.prepare('INSERT INTO schema_version (version, applied_at) VALUES (?, ?)').run(
-    //     2,
-    //     new Date().toISOString()
-    //   );
-    // }
+    db.transaction(() => {
+      if (currentVersion < 3) {
+        // Safe check if column exists before adding (to prevent errors if schema is partially updated)
+        const info = db.prepare("PRAGMA table_info(seeds)").all() as any[];
+        const hasEmbedding = info.some(col => col.name === 'embedding');
+
+        if (!hasEmbedding) {
+          db.exec('ALTER TABLE seeds ADD COLUMN embedding BLOB');
+        }
+
+        db.prepare('INSERT INTO schema_version (version, applied_at) VALUES (?, ?)').run(
+          3,
+          new Date().toISOString()
+        );
+      }
+    })();
   }
 };

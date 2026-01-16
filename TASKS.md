@@ -129,18 +129,18 @@ x-bookmarks-poc/ → src/ingestors/x-bookmarks/
 - [x] Ollama nomic-embed-text integration
 - [x] Embedding Service: Implemented `EmbeddingService` for vector generation.
 - [x] Similarity calculation: Implemented cosine similarity for semantic matching.
-- [ ] Store in SQLite BLOB (Next Session)
-- [ ] Similarity search function (Next Session)
+- [x] Store in SQLite BLOB: Updated schema and operations to persist vectors.
+- [x] Semantic search function: Tested end-to-end vector persistence and retrieval.
 
-### 2.3 Cross-Referencing
+### 2.3 Cross-Referencing ✅ (2026-01-16)
 
-- [ ] Find related items via embeddings
-- [ ] Generate wikilinks automatically
-- [ ] Update markdown with related links
+- [x] Find related items via embeddings: Implemented in `OrchestratorService`.
+- [x] Generate wikilinks automatically: Added to markdown generator.
+- [x] Update markdown with related links: Included in standard generation pipeline.
 
-### 2.4 Bot Enhancements
+### 2.4 Bot Enhancements ✅ (2026-01-16)
 
-- [ ] `/search` semantic search
+- [x] `/search` semantic search: Implemented with vector similarity.
 - [ ] `/topics` list clusters
 - [ ] On-demand commands (`/draft`, `/process`)
 

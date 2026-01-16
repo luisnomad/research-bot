@@ -4,6 +4,8 @@ import {
     markSeedProcessed,
     getSeedById,
     searchSeedsByTopic,
+    updateSeedEmbedding,
+    semanticSearch,
     type SeedRecord
 } from '../db/seed-operations.js';
 import { TriageService, type TriageResult } from '../llm/triage.js';
@@ -11,6 +13,7 @@ import { generateMarkdown } from '../markdown/generator.js';
 import { writeMarkdown, type MarkdownWriterConfig } from '../markdown/writer.js';
 import { createGitService } from '../git/service.js';
 import { NotificationService } from './telegram-notification.js';
+import { EmbeddingService } from '../llm/embeddings.js';
 import { logger } from '../config/logger.js';
 import { getConfig } from '../config/index.js';
 
@@ -175,10 +178,41 @@ export const OrchestratorService = {
                     topics: seed.triageTopics,
                 };
 
+                // --- NEW: Generate Embedding & Find Neighbors ---
+                let relatedSeeds: any[] = [];
+                let currentEmbedding = seed.embedding;
+
+                if (!currentEmbedding) {
+                    try {
+                        const contentToEmbed = seed.content.join('\n');
+                        const embedding = await EmbeddingService.embed(contentToEmbed);
+                        updateSeedEmbedding(db, seed.id, embedding);
+                        currentEmbedding = embedding;
+                        logger.info(`Generated embedding for seed ${seed.id}`);
+                    } catch (embErr) {
+                        logger.warn(`Failed to generate embedding for seed ${seed.id}: ${embErr}`);
+                    }
+                }
+
+                if (currentEmbedding) {
+                    const similar = semanticSearch(db, currentEmbedding, 6);
+                    relatedSeeds = similar
+                        .filter(s => s.id !== seed.id && s.markdownPath)
+                        .map(s => ({
+                            title: s.content[0]?.slice(0, 50) || 'Untitled',
+                            filename: s.markdownPath!.split('/').pop()!.replace('.md', ''),
+                            similarity: s.similarity
+                        }))
+                        .slice(0, 5);
+                    logger.info(`Found ${relatedSeeds.length} related seeds for seed ${seed.id}`);
+                }
+                // ---------------------------------------------
+
                 const doc = generateMarkdown({
                     seed,
                     triageResult,
                     triagedAt: seed.triageAt ?? new Date().toISOString(),
+                    relatedSeeds,
                 });
 
                 const result = await writeMarkdown(doc, writerConfig);
