@@ -31,3 +31,11 @@ Total: 30622
 **Confidence**: 95%  
 **Reason**: The content is a personal repository for Agent Skills and has been bookmarked by the user.
 
+
+## Related Notes
+
+- [[dejavucoder-claude-code-is-having-its-cursor-moment-after-karpathy]] (63% match)
+- [[googlecloudtech-stop-repeating-context-to-your-ai-shows-how-to-use]] (62% match)
+- [[code-the-agent-experience-in-just-got-a-major-upgrade-with]] (61% match)
+- [[aaditsh-this-guy-literally-dropped-15-rules-to-master-vibe-coding]] (61% match)
+- [[cline-oss-coding-models-are-catching-up-fast-swe-bench]] (60% match)

@@ -22,3 +22,11 @@ Here's how we're making it easier to build with open source AI.
 **Confidence**: 95%  
 **Reason**: The content is relevant and provides useful information about GitHub's AI API offerings.
 
+
+## Related Notes
+
+- [[mdancho84-this-guy-built-an-entire-ai-data-science-team-in-python]] (74% match)
+- [[unwind_ai_-woah-google-just-dropped-the-notebooklm-for-code]] (72% match)
+- [[officiallogank-you-can-now-vibe-code-voice-ai-agents-and-experiences-in]] (71% match)
+- [[niccolomiranda-excited-to-release-our-first-public-ai-web-app-powered-by]] (68% match)
+- [[andresmatte-build-your-own-whatsapp-ai-agent-from-zero-to-production]] (68% match)

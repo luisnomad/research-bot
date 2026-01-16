@@ -21,3 +21,11 @@ youtu.be/PA6tjgpDvHU
 **Confidence**: 95%  
 **Reason**: The content is engaging and relevant to the user's interests in AI.
 
+
+## Related Notes
+
+- [[sundarpichai-were-back-in-a-flash-gemini-3-flash-is-our-latest-model]] (78% match)
+- [[testingcatalog-breaking-google-introduced-gemini-enterprise-with-agents]] (75% match)
+- [[officiallogank-you-can-now-vibe-code-voice-ai-agents-and-experiences-in]] (68% match)
+- [[googlecloudtech-stop-repeating-context-to-your-ai-shows-how-to-use]] (68% match)
+- [[deemostech-built-a-zero-cost-image-to-3d-pipeline-in-minutes-using]] (67% match)

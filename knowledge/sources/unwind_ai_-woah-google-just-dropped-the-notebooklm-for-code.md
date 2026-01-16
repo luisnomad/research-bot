@@ -38,3 +38,11 @@ Get access to 100+ AI Agent, RAG, LLM, and MCP tutorials with open-source code -
 **Confidence**: 95%  
 **Reason**: The content appears to be a legitimate announcement about an AI tool for code repositories and is relevant.
 
+
+## Related Notes
+
+- [[officiallogank-you-can-now-vibe-code-voice-ai-agents-and-experiences-in]] (75% match)
+- [[github-github-models-now-offers-a-free-openai-compatible]] (72% match)
+- [[prajwaltomar_-how-to-set-up-cursor-the-right-way-cursor-rules-are]] (69% match)
+- [[testingcatalog-breaking-google-introduced-gemini-enterprise-with-agents]] (69% match)
+- [[mervinpraison-i-think-i-finally-found-the-sweet-spot-for-long-running-ai]] (69% match)

@@ -74,3 +74,11 @@ there will be both in-depth explanations about concepts that you need to know wh
 **Confidence**: 95%  
 **Reason**: The content appears to be a genuine announcement about the launch of Buy a GPU website & guide.
 
+
+## Related Notes
+
+- [[aaditsh-this-guy-literally-dropped-15-rules-to-master-vibe-coding]] (59% match)
+- [[0x0sojalsec-run-70b-llms-on-a-4gb-gpu-with-layer-wise-inference-and]] (58% match)
+- [[github-github-models-now-offers-a-free-openai-compatible]] (56% match)
+- [[officiallogank-you-can-now-vibe-code-voice-ai-agents-and-experiences-in]] (55% match)
+- [[chongdashu-want-to-know-how-to-vibe-code-games-like-these-threejs]] (54% match)

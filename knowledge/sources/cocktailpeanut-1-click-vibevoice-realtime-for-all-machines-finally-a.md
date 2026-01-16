@@ -70,3 +70,11 @@ Just a quick note: It's not perfect yet. You may notice a slight choppiness as i
 **Confidence**: 95%  
 **Reason**: The content is a personal account of an experience with the VibeVoice-Realtime AI launcher and does not contain spam or misinformation.
 
+
+## Related Notes
+
+- [[cocktailpeanut-generate-3d-from-just-one-image-on-your-computer-has]] (67% match)
+- [[officiallogank-you-can-now-vibe-code-voice-ai-agents-and-experiences-in]] (67% match)
+- [[tu7uruu-meet-the-new-qwen3-tts-2025-11-27-a-major-step-forward]] (65% match)
+- [[dilumsanjaya-vibe-coded-a-game-character-selection-screen-everything]] (63% match)
+- [[aaditsh-this-guy-literally-dropped-15-rules-to-master-vibe-coding]] (63% match)

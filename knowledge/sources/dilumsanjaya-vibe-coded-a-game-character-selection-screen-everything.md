@@ -61,3 +61,11 @@ In my last post, a bunch of people suggested some awesome rigging platforms. For
 **Confidence**: 95%  
 **Reason**: The content is a personal account of using AI tools for game development and does not contain spam, scams, or misinformation.
 
+
+## Related Notes
+
+- [[chongdashu-want-to-know-how-to-vibe-code-games-like-these-threejs]] (71% match)
+- [[dilumsanjaya-generated-some-futuristic-stuff-with-nano-banana-and]] (68% match)
+- [[angrypenguinpng-i-gave-claude-a-skill-to-create-presentations-nano-banana]] (67% match)
+- [[aaditsh-this-guy-literally-dropped-15-rules-to-master-vibe-coding]] (67% match)
+- [[officiallogank-you-can-now-vibe-code-voice-ai-agents-and-experiences-in]] (65% match)

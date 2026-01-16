@@ -41,3 +41,11 @@ tts-1128
 **Confidence**: 95%  
 **Reason**: The content appears to be a genuine update about Qwen3-TTS and is relevant for users interested in voice generation technology.
 
+
+## Related Notes
+
+- [[cocktailpeanut-1-click-vibevoice-realtime-for-all-machines-finally-a]] (65% match)
+- [[officiallogank-you-can-now-vibe-code-voice-ai-agents-and-experiences-in]] (64% match)
+- [[angrypenguinpng-i-gave-claude-a-skill-to-create-presentations-nano-banana]] (61% match)
+- [[dilumsanjaya-generated-some-futuristic-stuff-with-nano-banana-and]] (61% match)
+- [[googlelabs-2-brand-new-experiments-a-ton-of-updates-one-wild-ride]] (61% match)

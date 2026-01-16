@@ -33,17 +33,22 @@ pnpm process:item <id>        # On-demand triage & generation for one ID
 pm2 start ecosystem.config.cjs # Start managed process
 ```
 
-### ✅ Phase 1.9: Research & Intelligence - COMPLETE
-- **Research Service**: Implemented `ResearchService` using Brave Search via CDP for internet context.
-- **Fact-Checking**: Integrated research snippets directly into the LLM Triage prompt to verify claims.
-- **Embeddings**: Integrated `nomic-embed-text` via `EmbeddingService` for future semantic search and clustering.
+### ✅ Phase 2: Multi-Source & Intelligence - COMPLETE
+- **Research Service**: Implemented using Brave Search via CDP.
+- **Fact-Checking**: Integrated into Triage prompt.
+- **Embeddings**: Implemented `nomic-embed-text` with SQlite vector storage.
+- **Semantic Search**: Implemented `/search` with "Knowledge Node" vs "Pending Source" distinction.
+- **Interactive Reading**: Implemented `/read` command to view full notes in Telegram.
+- **Cross-Referencing**: Automatic "Related Notes" section with bidirectional linking.
+- **Safe Git Integration**: Implemented scoped commits to protect development work.
 
 ## Current State
 
 ### Database & Files
 - **Seeds**: Multi-source support (X Bookmarks, Manual URLs).
-- **Markdown**: Automatic generation and versioning in `knowledge/` folder.
-- **Intelligence**: System can now research and verify claims during triage.
+- **Markdown**: Automatic generation with **related seeds bidirectional linking**.
+- **Intelligence**: System research, verifies claims, generates embeddings, and finds related content.
+- **Git**: Auto-commits generated knowledge files without including other working directory changes.
 
 ### Available Commands
 ```bash
@@ -51,17 +56,19 @@ pnpm dev                      # Start server + nightly scheduler + bot
 pnpm bot                      # Run bot in standalone mode
 pnpm nightly                  # Manual trigger for full nightly pipeline
 pnpm process:item <id>        # On-demand triage & generation for one ID
+pnpm process:topic <name>     # Process all items with a specific topic
 pnpm tsx src/cli/test-research.ts "query"   # Test internet research
-pnpm tsx src/cli/test-embeddings.ts         # Test semantic similarity
+pnpm tsx src/cli/semantic-search.ts "query" # Test semantic search
+pnpm tsx src/cli/regenerate-library.ts      # Regenerate all markdown files
 pm2 start ecosystem.config.cjs # Start managed process
 ```
 
-## Next Session: Phase 2.1 - Persistence & Semantic Search
+## Next Session: Phase 3 - Advanced Intelligence
 
-### Goal: Vectorized Knowledge
-1. **Vector Storage**: Store generated embeddings in SQLite as BLOBs.
-2. **Semantic Search**: Implement `/search` bot command using vector similarity.
-3. **Cross-Linking**: Use embeddings to automatically discover and link related notes in Foam.
+### Goal: Synthesis & Content Generation
+1. **Topic Clustering**: Use HDBSCAN (or similar) on embeddings to find implicit topics.
+2. **Weekly Synthesis**: Generate a "Weekly Report" summarizing new knowledge.
+3. **Drafting Agent**: Implement `/draft <topic>` to write content (tweets/posts) based on your unique knowledge base.
 
 ## Technical Notes
 

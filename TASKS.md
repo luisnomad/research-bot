@@ -140,8 +140,10 @@ x-bookmarks-poc/ → src/ingestors/x-bookmarks/
 
 ### 2.4 Bot Enhancements ✅ (2026-01-16)
 
-- [x] `/search` semantic search: Implemented with vector similarity.
-- [ ] `/topics` list clusters
+- [x] `/search` semantic search: Implemented with vector similarity + Read Mode.
+- [x] Search Results UI: Distinguish between Knowledge Nodes and Pending Sources.
+- [x] `/read` command: View full markdown content in Telegram.
+- [ ] `/topics` list clusters (Moved to Phase 3)
 - [ ] On-demand commands (`/draft`, `/process`)
 
 ---

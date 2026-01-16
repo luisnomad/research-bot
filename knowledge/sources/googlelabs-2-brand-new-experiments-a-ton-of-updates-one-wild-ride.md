@@ -58,3 +58,11 @@ labs.google
 **Confidence**: 95%  
 **Reason**: The content is engaging and provides updates on Google Labs projects with a clear narrative.
 
+
+## Related Notes
+
+- [[sundarpichai-were-back-in-a-flash-gemini-3-flash-is-our-latest-model]] (68% match)
+- [[unwind_ai_-woah-google-just-dropped-the-notebooklm-for-code]] (68% match)
+- [[addyosmani-we-released-canvas-in-gemini-this-week-allowing-you-to]] (65% match)
+- [[testingcatalog-breaking-google-introduced-gemini-enterprise-with-agents]] (63% match)
+- [[officiallogank-you-can-now-vibe-code-voice-ai-agents-and-experiences-in]] (63% match)

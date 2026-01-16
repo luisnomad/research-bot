@@ -25,3 +25,11 @@ playwriter.dev
 **Confidence**: 95%  
 **Reason**: The content is personal opinion and social media interaction which are normal in this context.
 
+
+## Related Notes
+
+- [[venturetwins-you-can-now-use-claude-as-an-orchestration-agent-for]] (64% match)
+- [[daniel_mac8-do-people-know-about-the-claude-mem-plugin-for-claude]] (64% match)
+- [[dejavucoder-claude-code-is-having-its-cursor-moment-after-karpathy]] (63% match)
+- [[vasuman-people-keep-asking-me-for-advice-on-how-to-best-use-claude]] (62% match)
+- [[donvito-tutorial-on-how-to-configure-glm-46-in-claude-code]] (62% match)

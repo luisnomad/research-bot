@@ -27,3 +27,11 @@ mlx_lm.server --model mlx-community/MiniMax-M2.1-4bit
 **Confidence**: 95%  
 **Reason**: The content is a personal account of using an AI model on local machine and does not contain spam, scams or misinformation.
 
+
+## Related Notes
+
+- [[0x0sojalsec-run-70b-llms-on-a-4gb-gpu-with-layer-wise-inference-and]] (65% match)
+- [[niccolomiranda-excited-to-release-our-first-public-ai-web-app-powered-by]] (62% match)
+- [[github-github-models-now-offers-a-free-openai-compatible]] (61% match)
+- [[cline-oss-coding-models-are-catching-up-fast-swe-bench]] (58% match)
+- [[hackernoon-even-the-most-automated-ml-systems-still-need-an-underlying-3]] (57% match)

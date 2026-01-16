@@ -40,3 +40,11 @@ cc
 **Confidence**: 95%  
 **Reason**: The content is engaging and relevant to current AI trends in voice experiences.
 
+
+## Related Notes
+
+- [[unwind_ai_-woah-google-just-dropped-the-notebooklm-for-code]] (75% match)
+- [[testingcatalog-breaking-google-introduced-gemini-enterprise-with-agents]] (74% match)
+- [[aaditsh-this-guy-literally-dropped-15-rules-to-master-vibe-coding]] (71% match)
+- [[sundarpichai-were-back-in-a-flash-gemini-3-flash-is-our-latest-model]] (71% match)
+- [[github-github-models-now-offers-a-free-openai-compatible]] (71% match)

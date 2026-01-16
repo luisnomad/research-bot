@@ -27,3 +27,11 @@ Holy wtf. This is incredible, so fast, so good. Not even a second after i pasted
 **Confidence**: 95%  
 **Reason**: The content appears to be a genuine user experience and does not exhibit spammy behavior.
 
+
+## Related Notes
+
+- [[unwind_ai_-woah-google-just-dropped-the-notebooklm-for-code]] (64% match)
+- [[huang_chao4969-rag-anything-1-on-github-trending-a-huge-thank-you-to]] (61% match)
+- [[alexhillman-its-late-so-ill-probably-regret-posting-this-but-enter]] (61% match)
+- [[googlecloudtech-stop-repeating-context-to-your-ai-shows-how-to-use]] (60% match)
+- [[googlelabs-2-brand-new-experiments-a-ton-of-updates-one-wild-ride]] (60% match)

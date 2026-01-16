@@ -89,3 +89,11 @@ want to hear your thoughts on this.
 **Confidence**: 95%  
 **Reason**: The content is a personal reflection and learning experience shared by the user; it does not contain spam, scams, or misinformation.
 
+
+## Related Notes
+
+- [[addyosmani-we-released-canvas-in-gemini-this-week-allowing-you-to]] (60% match)
+- [[chongdashu-want-to-know-how-to-vibe-code-games-like-these-threejs]] (59% match)
+- [[mustache_dev-stop-everything-youre-doing-and-go-try-webgpu-and-tsl-i]] (59% match)
+- [[googlecloudtech-stop-repeating-context-to-your-ai-shows-how-to-use]] (58% match)
+- [[stitchbygoogle-introducing-stitchs-redesign-agent-powered-by-the-newly]] (58% match)

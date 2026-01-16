@@ -34,3 +34,11 @@ Now in Cline.
 **Confidence**: 95%  
 **Reason**: The content is a personal opinion and commentary on OSS coding models which are relevant to the field.
 
+
+## Related Notes
+
+- [[mervinpraison-i-think-i-finally-found-the-sweet-spot-for-long-running-ai]] (68% match)
+- [[unwind_ai_-woah-google-just-dropped-the-notebooklm-for-code]] (61% match)
+- [[dejavucoder-claude-code-is-having-its-cursor-moment-after-karpathy]] (61% match)
+- [[trending_repos-trending-repository-of-the-day-skills-public]] (60% match)
+- [[daniel_mac8-do-people-know-about-the-claude-mem-plugin-for-claude]] (59% match)

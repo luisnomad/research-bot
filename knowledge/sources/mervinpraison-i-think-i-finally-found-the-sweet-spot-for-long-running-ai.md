@@ -25,3 +25,11 @@ Pair it with a good agent setup and it quietly does real work.
 **Confidence**: 95%  
 **Reason**: The content is a personal opinion and does not contain spam, scams, or deliberate misinformation.
 
+
+## Related Notes
+
+- [[donvito-tutorial-on-how-to-configure-glm-46-in-claude-code]] (69% match)
+- [[unwind_ai_-woah-google-just-dropped-the-notebooklm-for-code]] (69% match)
+- [[cline-oss-coding-models-are-catching-up-fast-swe-bench]] (68% match)
+- [[prajwaltomar_-how-to-set-up-cursor-the-right-way-cursor-rules-are]] (67% match)
+- [[aaditsh-this-guy-literally-dropped-15-rules-to-master-vibe-coding]] (66% match)

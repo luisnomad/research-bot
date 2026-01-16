@@ -141,9 +141,19 @@ export const createBot = () => {
             const message =
                 `🔍 *Search results for:* \`${query}\`\n\n` +
                 results.map((r, i) => {
-                    const author = r.author ? `@${r.author.replace(/_/g, '\\_')}` : 'Unknown';
-                    const score = (r.similarity * 100).toFixed(1);
-                    return `${i + 1}. [${r.url}](${r.url})\n   *Match:* ${score}% | *Author:* ${author}`;
+                    const score = (r.similarity * 100).toFixed(0);
+                    const title = r.content[0]?.slice(0, 60).replace(/\n/g, ' ') + (r.content[0]?.length > 60 ? '...' : '');
+
+                    if (r.markdownPath) {
+                        // Knowledge Node
+                        return `${i + 1}. 📚 *Knowledge Node* (${score}%)\n` +
+                            `   _${title}_\n` +
+                            `   👉 /read\\_${r.id}`;
+                    } else {
+                        // Raw Source
+                        return `${i + 1}. ⏳ *Pending Source* (${score}%)\n` +
+                            `   [${title}](${r.url})`;
+                    }
                 }).join('\n\n');
 
             await ctx.api.editMessageText(
@@ -164,6 +174,50 @@ export const createBot = () => {
                 waitMsg.message_id,
                 `❌ *Search failed:* ${errorMsg}`
             );
+        } finally {
+            closeDatabase(db);
+        }
+    });
+
+    // Handle /read_123 commands
+    bot.hears(/^\/read_(\d+)$/, async (ctx) => {
+        const match = ctx.match;
+        if (!match || !match[1]) return;
+
+        const id = parseInt(match[1], 10);
+        const db = initDatabase();
+
+        try {
+            // Find seed by ID
+            const stmt = db.prepare('SELECT * FROM seeds WHERE id = ?');
+            const row = stmt.get(id);
+
+            if (!row || !(row as any).markdown_path) {
+                await ctx.reply('❌ Note not found or not yet processed.');
+                return;
+            }
+
+            const path = (row as any).markdown_path;
+
+            // Read file content (basic implementation)
+            const fs = await import('fs/promises');
+            const content = await fs.readFile(path, 'utf-8');
+
+            // Send content (chunking if necessary, but for now just send as file or text)
+            // Telegram has a 4096 char limit. For now, let's wrap in a code block or just send it.
+            // A better way is to parse it or send it as a file.
+            // Let's send the first 4000 chars for quick reading.
+
+            const textToSend = content.length > 4000
+                ? content.slice(0, 4000) + '\n\n... (truncated)'
+                : content;
+
+            await ctx.reply(`📄 *Note Preview:*\n\n\`\`\`markdown\n${textToSend}\n\`\`\``, { parse_mode: 'Markdown' });
+
+        } catch (error) {
+            const errorMsg = error instanceof Error ? error.message : String(error);
+            logger.error(`Read failed: ${errorMsg}`);
+            await ctx.reply('❌ Failed to read note.');
         } finally {
             closeDatabase(db);
         }

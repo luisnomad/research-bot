@@ -38,3 +38,11 @@ This one is particularly great a room renovations - would suggest trying it out!
 **Confidence**: 95%  
 **Reason**: The content is engaging and relevant to the user's interests in video generation.
 
+
+## Related Notes
+
+- [[angrypenguinpng-once-you-give-claude-video-generation-and-media-skills-it]] (79% match)
+- [[angrypenguinpng-i-gave-claude-a-skill-to-create-presentations-nano-banana]] (73% match)
+- [[angrypenguinpng-i-gave-claude-a-skill-to-create-presentations-nano-banana-2]] (71% match)
+- [[bcherny-we-just-open-sourced-the-code-simplifier-agent-we-use-on]] (70% match)
+- [[tom_doerr-visual-workflow-editor-for-claude-code]] (69% match)

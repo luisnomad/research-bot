@@ -40,3 +40,11 @@ Start the chat
 **Confidence**: 95%  
 **Reason**: The content appears to be a genuine guide and is relevant for the audience.
 
+
+## Related Notes
+
+- [[chongdashu-want-to-know-how-to-vibe-code-games-like-these-threejs]] (74% match)
+- [[mdancho84-this-guy-built-an-entire-ai-data-science-team-in-python]] (71% match)
+- [[officiallogank-you-can-now-vibe-code-voice-ai-agents-and-experiences-in]] (71% match)
+- [[googlecloudtech-stop-repeating-context-to-your-ai-shows-how-to-use]] (69% match)
+- [[vasuman-people-keep-asking-me-for-advice-on-how-to-best-use-claude]] (68% match)

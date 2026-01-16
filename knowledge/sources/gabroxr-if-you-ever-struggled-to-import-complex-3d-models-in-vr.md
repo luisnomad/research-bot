@@ -33,3 +33,11 @@ Check it out and let me know what you think
 **Confidence**: 95%  
 **Reason**: The content is relevant to current discussions in the field of mixed reality and provides a practical solution for users struggling with asset importation.
 
+
+## Related Notes
+
+- [[dilumsanjaya-generated-some-futuristic-stuff-with-nano-banana-and]] (69% match)
+- [[cocktailpeanut-generate-3d-from-just-one-image-on-your-computer-has]] (65% match)
+- [[niccolomiranda-excited-to-release-our-first-public-ai-web-app-powered-by]] (62% match)
+- [[deemostech-built-a-zero-cost-image-to-3d-pipeline-in-minutes-using]] (61% match)
+- [[mustache_dev-stop-everything-youre-doing-and-go-try-webgpu-and-tsl-i]] (59% match)

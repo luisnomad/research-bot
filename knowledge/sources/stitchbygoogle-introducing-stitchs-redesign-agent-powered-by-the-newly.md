@@ -74,3 +74,11 @@ I just upload a screenshot of my current app to set the context, then attach my 
 **Confidence**: 95%  
 **Reason**: The content is a personal account of the product's development and use cases which are valuable for understanding its impact.
 
+
+## Related Notes
+
+- [[googlelabs-2-brand-new-experiments-a-ton-of-updates-one-wild-ride]] (62% match)
+- [[niccolomiranda-excited-to-release-our-first-public-ai-web-app-powered-by]] (60% match)
+- [[angrypenguinpng-i-gave-claude-a-skill-to-create-presentations-nano-banana]] (60% match)
+- [[googlecloudtech-stop-repeating-context-to-your-ai-shows-how-to-use]] (60% match)
+- [[venturetwins-you-can-now-use-claude-as-an-orchestration-agent-for]] (59% match)

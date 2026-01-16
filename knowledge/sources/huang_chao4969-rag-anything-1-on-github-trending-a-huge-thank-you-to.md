@@ -61,3 +61,11 @@ Try RAG-Anything:
 **Confidence**: 95%  
 **Reason**: The content is engaging and relevant to the open-source community.
 
+
+## Related Notes
+
+- [[svpino-knowledge-graphs-for-representing-information-are]] (64% match)
+- [[alexhillman-its-late-so-ill-probably-regret-posting-this-but-enter]] (63% match)
+- [[googlelabs-2-brand-new-experiments-a-ton-of-updates-one-wild-ride]] (62% match)
+- [[addyosmani-we-released-canvas-in-gemini-this-week-allowing-you-to]] (61% match)
+- [[0xsero-stop-what-youre-doing-and-try-https-zreadai-holy]] (61% match)

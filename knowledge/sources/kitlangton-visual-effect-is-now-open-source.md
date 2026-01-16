@@ -39,3 +39,11 @@ With sound
 **Confidence**: 95%  
 **Reason**: The content appears to be a personal update about the Visual Effect project and does not exhibit spammy behavior or misinformation.
 
+
+## Related Notes
+
+- [[cocktailpeanut-generate-3d-from-just-one-image-on-your-computer-has]] (62% match)
+- [[addyosmani-we-released-canvas-in-gemini-this-week-allowing-you-to]] (61% match)
+- [[yixin_wan_-tired-of-static-lifeless-image-edits-not-anymore-we]] (61% match)
+- [[mustache_dev-stop-everything-youre-doing-and-go-try-webgpu-and-tsl-i]] (60% match)
+- [[tom_doerr-visual-workflow-editor-for-claude-code]] (59% match)

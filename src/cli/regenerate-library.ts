@@ -30,7 +30,7 @@ async function main() {
 
         const config = getConfig();
         const baseDir = config.system.knowledge_base_path;
-        const outputDir = baseDir.endsWith('/') ? `${baseDir}knowledge` : `${baseDir}/knowledge`;
+        const outputDir = baseDir; // Use the configured path directly
 
         const writerConfig: MarkdownWriterConfig = {
             baseDir: outputDir,

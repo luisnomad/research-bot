@@ -75,3 +75,11 @@ Follow me
 **Confidence**: 95%  
 **Reason**: The content is a legitimate tutorial on configuring GLM in Claude Code and appears to be from an authoritative source.
 
+
+## Related Notes
+
+- [[vasuman-people-keep-asking-me-for-advice-on-how-to-best-use-claude]] (73% match)
+- [[daniel_mac8-do-people-know-about-the-claude-mem-plugin-for-claude]] (71% match)
+- [[dejavucoder-claude-code-is-having-its-cursor-moment-after-karpathy]] (70% match)
+- [[mervinpraison-i-think-i-finally-found-the-sweet-spot-for-long-running-ai]] (69% match)
+- [[bcherny-we-just-open-sourced-the-code-simplifier-agent-we-use-on]] (67% match)

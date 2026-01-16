@@ -43,3 +43,11 @@ ude-mem
 **Confidence**: 95%  
 **Reason**: The content is personal commentary and discusses a plugin for Claude Code which seems to be of interest.
 
+
+## Related Notes
+
+- [[bcherny-we-just-open-sourced-the-code-simplifier-agent-we-use-on]] (71% match)
+- [[donvito-tutorial-on-how-to-configure-glm-46-in-claude-code]] (71% match)
+- [[venturetwins-you-can-now-use-claude-as-an-orchestration-agent-for]] (67% match)
+- [[vasuman-people-keep-asking-me-for-advice-on-how-to-best-use-claude]] (67% match)
+- [[tom_doerr-visual-workflow-editor-for-claude-code]] (67% match)

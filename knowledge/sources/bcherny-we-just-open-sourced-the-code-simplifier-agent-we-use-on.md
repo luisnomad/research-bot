@@ -27,3 +27,11 @@ Ask Claude to use the code simplifier agent at the end of a long coding session,
 **Confidence**: 95%  
 **Reason**: The content is a personal opinion and relevant to the community interested in coding practices.
 
+
+## Related Notes
+
+- [[dejavucoder-claude-code-is-having-its-cursor-moment-after-karpathy]] (76% match)
+- [[daniel_mac8-do-people-know-about-the-claude-mem-plugin-for-claude]] (71% match)
+- [[vasuman-people-keep-asking-me-for-advice-on-how-to-best-use-claude]] (70% match)
+- [[venturetwins-you-can-now-use-claude-as-an-orchestration-agent-for]] (70% match)
+- [[donvito-tutorial-on-how-to-configure-glm-46-in-claude-code]] (67% match)

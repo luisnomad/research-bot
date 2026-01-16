@@ -32,3 +32,11 @@ btw, I'm building an agent that helps you get in the press and LLM recommendatio
 **Confidence**: 95%  
 **Reason**: The content is personal commentary and does not appear to be spam.
 
+
+## Related Notes
+
+- [[hackernoon-even-the-most-automated-ml-systems-still-need-an-underlying-3]] (54% match)
+- [[googlecloudtech-stop-repeating-context-to-your-ai-shows-how-to-use]] (54% match)
+- [[mervinpraison-i-think-i-finally-found-the-sweet-spot-for-long-running-ai]] (53% match)
+- [[venturetwins-you-can-now-use-claude-as-an-orchestration-agent-for]] (52% match)
+- [[andresmatte-build-your-own-whatsapp-ai-agent-from-zero-to-production]] (50% match)

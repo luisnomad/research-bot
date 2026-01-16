@@ -50,9 +50,9 @@ export const createGitService = (config: GitServiceConfig) => {
         /**
          * Create a commit
          */
-        async commit(message: string): Promise<GitCommitResult> {
+        async commit(message: string, files?: string | string[]): Promise<GitCommitResult> {
             try {
-                const result = await git.commit(message);
+                const result = await git.commit(message, files);
                 return {
                     success: true,
                     hash: result.commit,
@@ -73,10 +73,11 @@ export const createGitService = (config: GitServiceConfig) => {
 
         /**
          * Add and commit files in one go
+         * Safe: Only commits the specified files, ignoring other staged changes.
          */
         async addAndCommit(files: string | string[], message: string): Promise<GitCommitResult> {
             await this.add(files);
-            return this.commit(message);
+            return this.commit(message, files);
         }
     };
 };

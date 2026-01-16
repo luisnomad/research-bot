@@ -28,3 +28,11 @@ using this here:
 **Confidence**: 95%  
 **Reason**: The content is a personal opinion and does not contain spam, scams, or deliberate misinformation.
 
+
+## Related Notes
+
+- [[limzba-i-wasnt-expecting-such-an-intelligence-model-on-my-local]] (55% match)
+- [[gabroxr-if-you-ever-struggled-to-import-complex-3d-models-in-vr]] (52% match)
+- [[googlecloudtech-stop-repeating-context-to-your-ai-shows-how-to-use]] (50% match)
+- [[sainianmol16-built-mapcn-a-free-open-source-and-copy-paste-map]] (49% match)
+- [[daniel_mac8-do-people-know-about-the-claude-mem-plugin-for-claude]] (49% match)

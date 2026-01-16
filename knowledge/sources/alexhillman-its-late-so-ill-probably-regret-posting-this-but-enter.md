@@ -56,3 +56,11 @@ have fun, PRs welcome!
 **Confidence**: 95%  
 **Reason**: The content is personal opinion and social media post which are normal on Twitter.
 
+
+## Related Notes
+
+- [[huang_chao4969-rag-anything-1-on-github-trending-a-huge-thank-you-to]] (63% match)
+- [[aaditsh-this-guy-literally-dropped-15-rules-to-master-vibe-coding]] (61% match)
+- [[0xsero-stop-what-youre-doing-and-try-https-zreadai-holy]] (61% match)
+- [[chongdashu-want-to-know-how-to-vibe-code-games-like-these-threejs]] (60% match)
+- [[vasuman-people-keep-asking-me-for-advice-on-how-to-best-use-claude]] (59% match)

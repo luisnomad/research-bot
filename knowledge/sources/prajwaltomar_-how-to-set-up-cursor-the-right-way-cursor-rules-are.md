@@ -133,3 +133,11 @@ Cursor’s Project Rules provide a massive improvement over .cursorrules:
 **Confidence**: 95%  
 **Reason**: The content is insightful and provides valuable information on setting up cursor rules effectively.
 
+
+## Related Notes
+
+- [[unwind_ai_-woah-google-just-dropped-the-notebooklm-for-code]] (69% match)
+- [[aaditsh-this-guy-literally-dropped-15-rules-to-master-vibe-coding]] (68% match)
+- [[mervinpraison-i-think-i-finally-found-the-sweet-spot-for-long-running-ai]] (67% match)
+- [[mdancho84-this-guy-built-an-entire-ai-data-science-team-in-python]] (63% match)
+- [[bcherny-we-just-open-sourced-the-code-simplifier-agent-we-use-on]] (62% match)

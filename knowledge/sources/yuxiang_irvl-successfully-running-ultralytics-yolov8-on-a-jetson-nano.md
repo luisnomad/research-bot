@@ -32,3 +32,11 @@ USB C270: plug-and-play, but ~10 FPS
 **Confidence**: 95%  
 **Reason**: The content is a personal account of using Ultralytics YOLOv8 on edge devices and provides valuable insights into performance comparisons between different cameras.
 
+
+## Related Notes
+
+- [[cocktailpeanut-generate-3d-from-just-one-image-on-your-computer-has]] (63% match)
+- [[deemostech-built-a-zero-cost-image-to-3d-pipeline-in-minutes-using]] (59% match)
+- [[niccolomiranda-excited-to-release-our-first-public-ai-web-app-powered-by]] (57% match)
+- [[dilumsanjaya-generated-some-futuristic-stuff-with-nano-banana-and]] (55% match)
+- [[sundarpichai-were-back-in-a-flash-gemini-3-flash-is-our-latest-model]] (55% match)

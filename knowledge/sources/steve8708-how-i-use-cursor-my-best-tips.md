@@ -37,3 +37,11 @@ You can subscribe to me there, more  videos like this coming soon
 **Confidence**: 95%  
 **Reason**: The content appears to be a personal insight and tips from the author which is valuable for their audience.
 
+
+## Related Notes
+
+- [[venturetwins-you-can-now-use-claude-as-an-orchestration-agent-for]] (59% match)
+- [[angrypenguinpng-i-gave-claude-a-skill-to-create-presentations-nano-banana]] (59% match)
+- [[cocktailpeanut-generate-3d-from-just-one-image-on-your-computer-has]] (59% match)
+- [[dejavucoder-claude-code-is-having-its-cursor-moment-after-karpathy]] (58% match)
+- [[rhyssullivan-playwriter-is-exactly-what-i-have-been-looking-for-in]] (57% match)

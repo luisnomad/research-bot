@@ -155,7 +155,7 @@ export const OrchestratorService = {
     async generateMarkdownBatch(db: any, seeds: SeedRecord[]) {
         const config = getConfig();
         const baseDir = config.system.knowledge_base_path;
-        const outputDir = baseDir.endsWith('/') ? `${baseDir}knowledge` : `${baseDir}/knowledge`;
+        const outputDir = baseDir; // Use the configured path directly
 
         const gitService = config.git.auto_commit ? createGitService({ baseDir: process.cwd() }) : null;
 

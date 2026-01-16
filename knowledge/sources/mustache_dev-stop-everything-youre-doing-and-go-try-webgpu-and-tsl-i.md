@@ -82,3 +82,11 @@ The Rafale is a one draw call rigged Rafale
 **Confidence**: 95%  
 **Reason**: The content is a personal reflection on the user's experience with TSL and WebGPU which adds value to their knowledge base.
 
+
+## Related Notes
+
+- [[cocktailpeanut-generate-3d-from-just-one-image-on-your-computer-has]] (61% match)
+- [[dilumsanjaya-generated-some-futuristic-stuff-with-nano-banana-and]] (61% match)
+- [[addyosmani-we-released-canvas-in-gemini-this-week-allowing-you-to]] (61% match)
+- [[kitlangton-visual-effect-is-now-open-source]] (60% match)
+- [[sorenblank-made-only-using-css-no-js-listener-used-took-me-longer]] (59% match)

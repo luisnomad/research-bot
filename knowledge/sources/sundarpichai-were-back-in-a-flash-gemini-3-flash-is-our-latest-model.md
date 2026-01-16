@@ -40,3 +40,11 @@ Read more:
 **Confidence**: 95%  
 **Reason**: The content is a personal opinion and commentary on the latest Gemini model which does not contain spam, scams or misinformation.
 
+
+## Related Notes
+
+- [[intheworldofai-gemini-3-deep-think-enhancing-gemini-to-become-a-super]] (78% match)
+- [[testingcatalog-breaking-google-introduced-gemini-enterprise-with-agents]] (72% match)
+- [[officiallogank-you-can-now-vibe-code-voice-ai-agents-and-experiences-in]] (71% match)
+- [[googlelabs-2-brand-new-experiments-a-ton-of-updates-one-wild-ride]] (68% match)
+- [[deemostech-built-a-zero-cost-image-to-3d-pipeline-in-minutes-using]] (68% match)

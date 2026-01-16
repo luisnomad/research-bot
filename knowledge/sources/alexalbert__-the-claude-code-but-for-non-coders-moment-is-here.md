@@ -23,3 +23,11 @@ Cowork will form the foundation of the future of knowledge work.
 **Confidence**: 95%  
 **Reason**: The content is personal opinion and commentary which are valid expressions of thought.
 
+
+## Related Notes
+
+- [[dejavucoder-claude-code-is-having-its-cursor-moment-after-karpathy]] (70% match)
+- [[vasuman-people-keep-asking-me-for-advice-on-how-to-best-use-claude]] (65% match)
+- [[tom_doerr-visual-workflow-editor-for-claude-code]] (64% match)
+- [[bcherny-we-just-open-sourced-the-code-simplifier-agent-we-use-on]] (63% match)
+- [[unwind_ai_-woah-google-just-dropped-the-notebooklm-for-code]] (63% match)

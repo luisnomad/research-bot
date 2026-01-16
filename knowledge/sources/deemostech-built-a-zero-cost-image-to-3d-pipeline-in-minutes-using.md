@@ -34,3 +34,11 @@ TTlU_o1KzpuJiERPDnnLJrf1ebnHHx
 **Confidence**: 95%  
 **Reason**: The content is engaging and relevant to current technology trends.
 
+
+## Related Notes
+
+- [[sundarpichai-were-back-in-a-flash-gemini-3-flash-is-our-latest-model]] (68% match)
+- [[intheworldofai-gemini-3-deep-think-enhancing-gemini-to-become-a-super]] (67% match)
+- [[cocktailpeanut-generate-3d-from-just-one-image-on-your-computer-has]] (66% match)
+- [[addyosmani-we-released-canvas-in-gemini-this-week-allowing-you-to]] (64% match)
+- [[dilumsanjaya-generated-some-futuristic-stuff-with-nano-banana-and]] (64% match)

@@ -80,3 +80,11 @@ builderpack.ai
 **Confidence**: 95%  
 **Reason**: The content is a personal workflow shared by the user and does not contain spam, scams, or deliberate misinformation.
 
+
+## Related Notes
+
+- [[aaditsh-this-guy-literally-dropped-15-rules-to-master-vibe-coding]] (74% match)
+- [[dilumsanjaya-vibe-coded-a-game-character-selection-screen-everything]] (71% match)
+- [[officiallogank-you-can-now-vibe-code-voice-ai-agents-and-experiences-in]] (68% match)
+- [[dejavucoder-claude-code-is-having-its-cursor-moment-after-karpathy]] (67% match)
+- [[bcherny-we-just-open-sourced-the-code-simplifier-agent-we-use-on]] (65% match)

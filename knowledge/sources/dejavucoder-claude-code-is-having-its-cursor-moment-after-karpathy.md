@@ -27,3 +27,11 @@ with-claude-code-20-and-how-to-get-better-at-using-coding-agents/
 **Confidence**: 95%  
 **Reason**: The content is personal opinion and commentary on a relevant topic with no evidence of spam, scams, or misinformation.
 
+
+## Related Notes
+
+- [[vasuman-people-keep-asking-me-for-advice-on-how-to-best-use-claude]] (80% match)
+- [[bcherny-we-just-open-sourced-the-code-simplifier-agent-we-use-on]] (76% match)
+- [[alexalbert__-the-claude-code-but-for-non-coders-moment-is-here-2]] (70% match)
+- [[donvito-tutorial-on-how-to-configure-glm-46-in-claude-code]] (70% match)
+- [[code-the-agent-experience-in-just-got-a-major-upgrade-with]] (68% match)

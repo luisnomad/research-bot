@@ -20,3 +20,11 @@ Convert any epub file to plain text for ai analysis.
 **Confidence**: 95%  
 **Reason**: The content is relevant and valuable for AI analysis.
 
+
+## Related Notes
+
+- [[github-github-models-now-offers-a-free-openai-compatible]] (65% match)
+- [[unwind_ai_-woah-google-just-dropped-the-notebooklm-for-code]] (60% match)
+- [[mdancho84-this-guy-built-an-entire-ai-data-science-team-in-python]] (59% match)
+- [[niccolomiranda-excited-to-release-our-first-public-ai-web-app-powered-by]] (59% match)
+- [[aaditsh-this-guy-literally-dropped-15-rules-to-master-vibe-coding]] (58% match)

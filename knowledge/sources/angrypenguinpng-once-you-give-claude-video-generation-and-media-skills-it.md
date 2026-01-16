@@ -21,3 +21,11 @@ The creative side of Claude is honestly insane.
 **Confidence**: 95%  
 **Reason**: The content is engaging and provides insight into the creative capabilities of AI.
 
+
+## Related Notes
+
+- [[venturetwins-you-can-now-use-claude-as-an-orchestration-agent-for]] (79% match)
+- [[angrypenguinpng-i-gave-claude-a-skill-to-create-presentations-nano-banana]] (69% match)
+- [[dejavucoder-claude-code-is-having-its-cursor-moment-after-karpathy]] (66% match)
+- [[tom_doerr-visual-workflow-editor-for-claude-code]] (63% match)
+- [[angrypenguinpng-i-gave-claude-a-skill-to-create-presentations-nano-banana-2]] (62% match)

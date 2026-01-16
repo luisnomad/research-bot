@@ -40,3 +40,11 @@ We are currently phasing non-completing requests due for high traffic. We are wo
 **Confidence**: 95%  
 **Reason**: The content is a personal announcement about the release of an AI web app and does not contain spam or misinformation.
 
+
+## Related Notes
+
+- [[cocktailpeanut-generate-3d-from-just-one-image-on-your-computer-has]] (72% match)
+- [[github-github-models-now-offers-a-free-openai-compatible]] (68% match)
+- [[googlecloudtech-stop-repeating-context-to-your-ai-shows-how-to-use]] (66% match)
+- [[unwind_ai_-woah-google-just-dropped-the-notebooklm-for-code]] (65% match)
+- [[mdancho84-this-guy-built-an-entire-ai-data-science-team-in-python]] (65% match)
